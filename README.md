@@ -13,4 +13,4 @@ cd Timeoff-AWS-Environment
 
 (Note - At this point in time, the container will not launch unless you SSH into the device first
 You may need to manually create an instance and login to the instance
-Userdata script in userdata.sh)
+(Userdata script in userdata.sh))
