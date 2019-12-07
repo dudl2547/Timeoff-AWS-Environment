@@ -1,0 +1,10 @@
+aws_region = "us-east-1"
+vpc_cidr = "10.0.0.0/16"
+subnet_cidr = "10.0.1.0/24"
+key_name = "my-key-pair"
+public_key_path = "~/.ssh/my-key-pair.pub"
+instance_type = "t2.micro"
+ami = "ami-00068cd7555f543d5"
+data "aws_availability_zones" "available" {}
+access_key = "your_access_key"
+secret_key = "your_access_key"
