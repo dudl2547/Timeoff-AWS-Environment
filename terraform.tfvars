@@ -7,4 +7,4 @@ instance_type = "t2.micro"
 ami = "ami-00068cd7555f543d5"
 data "aws_availability_zones" "available" {}
 access_key = "your_access_key"
-secret_key = "your_access_key"
+secret_key = "your_secret_key"
