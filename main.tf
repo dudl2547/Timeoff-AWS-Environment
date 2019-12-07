@@ -37,6 +37,14 @@ resource "aws_route_table" "timeoff_public_rt" {
   }
 }
 
+resource "aws_default_route_table" "timeoff_private_rt" {
+  default_route_table_id = "${aws_vpc.timeoff_vpc.default_route_table_id}"
+
+  tags {
+    Name = "timeoff_private"
+  }
+}
+
 resource "aws_subnet" "timeoff_public_subnet" {
   vpc_id                  = "${aws_vpc.timeoff_vpc.id}"
   cidr_block              = "${var.subnet_cidr}"
