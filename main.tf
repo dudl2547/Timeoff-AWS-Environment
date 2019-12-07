@@ -127,10 +127,10 @@ resource "aws_instance" "timeoff_dev" {
               sudo curl -O https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip
               sudo unzip terraform_0.11.5_linux_amd64.zip -d /usr/local/bin/ 
               terraform --version
-	          sudo yum install git -y
+	      sudo yum install git -y
               sudo git clone https://github.com/dudl2547/Timeoff.git
               cd Timeoff
-	          sudo docker ps -a
+	      sudo docker ps -a
               sudo terraform init
               sudo terraform plan
               sudo terraform apply -auto-approve
